@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Digital Museum — uma experiência interativa pela evolução da tecnologia.">
+
+    <title>Digital Museum — Museu Interativo de Tecnologia</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+            <a href="#home"
+               class="logo">
+
+                <span class="logo-mark">D</span>
+
+                <span class="logo-text">
+                    DIGITAL<span>MUSEUM</span>
+                </span>
+
+            </a>
+
+            <nav class="nav"
+                 id="mainNav">
+
+                <a href="#home"
+                   class="nav-link active">
+                    Início
+                </a>
+
+                <a href="#timeline"
+                   class="nav-link">
+                    Timeline
+                </a>
+
+                <a href="#museum"
+                   class="nav-link">
+                    Exposição
+                </a>
+
+                <a href="#about"
+                   class="nav-link">
+                    Sobre
+                </a>
+
+            </nav>
+
+            <button class="menu-button"
+                    id="menuButton"
+                    aria-label="Abrir menu">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================================
+             HERO
+        ========================================== -->
+
+        <section class="hero"
+                 id="home">
+
+            <div class="hero-grid"></div>
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+
+                    <span class="status-dot"></span>
+
+                    ARQUIVO DIGITAL // 001
+
+                </div>
+
+                <h1>
+
+                    A evolução da
+                    <span>tecnologia.</span>
+
+                </h1>
+
+                <p class="hero-description">
+
+                    Uma viagem interativa através das máquinas,
+                    ideias e invenções que transformaram a maneira
+                    como a humanidade vive, trabalha e se conecta.
+
+                </p>
+
+                <div class="hero-actions">
+
+                    <button class="primary-button"
+                            id="startButton">
+
+                        <span>Explorar o museu</span>
+
+                        <span class="arrow">→</span>
+
+                    </button>
+
+                    <a href="#about"
+                       class="secondary-button">
+
+                        Sobre o projeto
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="orb">
+
+                    <div class="orb-inner"></div>
+
+                    <div class="orb-ring ring-one"></div>
+                    <div class="orb-ring ring-two"></div>
+                    <div class="orb-ring ring-three"></div>
+
+                </div>
+
+                <div class="hero-year">
+
+                    <span>EXPLORANDO</span>
+
+                    <strong>1940—∞</strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="scroll-indicator">
+
+                <span>SCROLL TO EXPLORE</span>
+
+                <div class="scroll-line"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             TIMELINE
+        ========================================== -->
+
+        <section class="timeline-section"
+                 id="timeline">
+
+            <div class="section-header">
+
+                <div>
+
+                    <span class="section-label">
+                        01 // LINHA DO TEMPO
+                    </span>
+
+                    <h2>
+                        Seis momentos.
+                        <br>
+                        Uma revolução.
+                    </h2>
+
+                </div>
+
+                <p>
+                    Selecione uma época para alterar
+                    a exposição.
+                </p>
+
+            </div>
+
+
+            <div class="timeline"
+                 id="timelineControls">
+
+                <button class="timeline-item active"
+                        data-year="1940">
+
+                    <span class="timeline-dot"></span>
+
+                    <span class="timeline-year">
+                        1940
+                    </span>
+
+                    <span class="timeline-name">
+                        COMPUTADORES
+                    </span>
+
+                </button>
+
+
+                <button class="timeline-item"
+                        data-year="1960">
+
+                    <span class="timeline-dot"></span>
+
+                    <span class="timeline-year">
+                        1960
+                    </span>
+
+                    <span class="timeline-name">
+                        MAINFRAMES
+                    </span>
+
+                </button>
+
+
+                <button class="timeline-item"
+                        data-year="1980">
+
+                    <span class="timeline-dot"></span>
+
+                    <span class="timeline-year">
+                        1980
+                    </span>
+
+                    <span class="timeline-name">
+                        COMPUTADOR PESSOAL
+                    </span>
+
+                </button>
+
+
+                <button class="timeline-item"
+                        data-year="2000">
+
+                    <span class="timeline-dot"></span>
+
+                    <span class="timeline-year">
+                        2000
+                    </span>
+
+                    <span class="timeline-name">
+                        WEB
+                    </span>
+
+                </button>
+
+
+                <button class="timeline-item"
+                        data-year="2020">
+
+                    <span class="timeline-dot"></span>
+
+                    <span class="timeline-year">
+                        2020
+                    </span>
+
+                    <span class="timeline-name">
+                        INTELIGÊNCIA ARTIFICIAL
+                    </span>
+
+                </button>
+
+
+                <button class="timeline-item"
+                        data-year="future">
+
+                    <span class="timeline-dot"></span>
+
+                    <span class="timeline-year">
+                        FUTURO
+                    </span>
+
+                    <span class="timeline-name">
+                        COMPUTAÇÃO QUÂNTICA
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             MUSEUM / EXHIBITION
+        ========================================== -->
+
+        <section class="museum-section"
+                 id="museum">
+
+            <div class="museum-container">
+
+
+                <!-- LEFT -->
+                <div class="museum-info">
+
+                    <div class="era-number"
+                         id="eraNumber">
+
+                        01
+
+                    </div>
+
+                    <div class="era-meta">
+
+                        <span id="eraYear">
+                            1940
+                        </span>
+
+                        <span class="separator">
+                            /
+                        </span>
+
+                        <span id="eraCategory">
+                            COMPUTAÇÃO
+                        </span>
+
+                    </div>
+
+
+                    <h2 id="eraTitle">
+
+                        ENIAC
+
+                    </h2>
+
+
+                    <p id="eraDescription">
+
+                        Considerado um dos primeiros computadores
+                        eletrônicos de uso geral, o ENIAC ocupava
+                        uma sala inteira e utilizava milhares de
+                        válvulas eletrônicas.
+
+                    </p>
+
+
+                    <div class="stats"
+                         id="stats">
+
+                        <div class="stat">
+
+                            <strong id="statOne">
+                                17.468
+                            </strong>
+
+                            <span id="labelOne">
+                                VÁLVULAS
+                            </span>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <strong id="statTwo">
+                                30 t
+                            </strong>
+
+                            <span id="labelTwo">
+                                PESO
+                            </span>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <strong id="statThree">
+                                150 kW
+                            </strong>
+
+                            <span id="labelThree">
+                                CONSUMO
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <button class="details-button"
+                            id="detailsButton">
+
+                        Ver detalhes
+
+                        <span>↗</span>
+
+                    </button>
+
+                </div>
+
+
+                <!-- RIGHT -->
+                <div class="museum-image-container">
+
+                    <div class="image-counter">
+
+                        <span id="imageIndex">
+                            01
+                        </span>
+
+                        <span>/ 06</span>
+
+                    </div>
+
+
+                    <div class="museum-image-frame">
+
+                        <div class="image-grid"></div>
+
+                        <div class="image-overlay"></div>
+
+                        <div class="scan-line"></div>
+
+
+                        <img src="assets/images/eniac.jpg"
+                             alt="ENIAC"
+                             class="museum-image"
+                             id="museumImage">
+
+
+                        <div class="image-interface">
+
+                            <span>
+                                ARCHIVE
+                            </span>
+
+                            <span>
+                                DIGITAL MUSEUM
+                            </span>
+
+                        </div>
+
+
+                        <button class="zoom-button"
+                                id="zoomButton"
+                                aria-label="Ampliar imagem">
+
+                            ⤢
+
+                        </button>
+
+
+                        <div class="image-credit">
+
+                            <span>
+                                SOURCE:
+                            </span>
+
+                            <span id="imageSource">
+                                Wikimedia Commons
+                            </span>
+
+                            <span class="credit-separator">
+                                //
+                            </span>
+
+                            <span id="imageLicense">
+                                Public Domain
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="image-caption">
+
+                        <span id="imageStatus">
+                            ARQUIVO DIGITALIZADO
+                        </span>
+
+                        <span>
+                            001 / 006
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             PASSPORT
+        ========================================== -->
+
+        <section class="passport-section">
+
+            <div class="passport-card">
+
+                <div class="passport-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            DIGITAL PASSPORT
+                        </span>
+
+                        <h3>
+                            Seu progresso
+                        </h3>
+
+                    </div>
+
+                    <strong id="progressText">
+                        1 / 6
+                    </strong>
+
+                </div>
+
+
+                <div class="progress">
+
+                    <div class="progress-fill"
+                         id="progressFill">
+
+                    </div>
+
+                </div>
+
+
+                <div class="passport-footer">
+
+                    <span>
+                        EXPLORE TODAS AS ERAS
+                    </span>
+
+                    <span>
+                        <span id="progressPercent">
+                            17
+                        </span>%
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             ABOUT
+        ========================================== -->
+
+        <section class="about-section"
+                 id="about">
+
+            <div class="about-grid">
+
+                <div>
+
+                    <span class="section-label">
+                        02 // SOBRE
+                    </span>
+
+                    <h2>
+                        Tecnologia não é
+                        apenas hardware.
+                    </h2>
+
+                </div>
+
+
+                <div class="about-text">
+
+                    <p>
+
+                        O Digital Museum é uma experiência
+                        experimental criada para apresentar
+                        a evolução da tecnologia de maneira
+                        visual e interativa.
+
+                    </p>
+
+                    <p>
+
+                        Da escala monumental dos primeiros
+                        computadores até sistemas capazes
+                        de processar problemas quânticos,
+                        cada período representa uma mudança
+                        na relação entre pessoas e tecnologia.
+
+                    </p>
+
+                    <div class="about-line"></div>
+
+                    <span class="about-tag">
+                        DIGITAL MUSEUM / 2026
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         MODAL
+    ========================================== -->
+
+    <div class="modal"
+         id="modal"
+         aria-hidden="true">
+
+        <div class="modal-background"
+             id="modalBackground"></div>
+
+        <div class="modal-content">
+
+            <button class="modal-close"
+                    id="closeModal"
+                    aria-label="Fechar">
+
+                ×
+
+            </button>
+
+
+            <span class="section-label">
+                ARQUIVO // DETALHES
+            </span>
+
+
+            <div class="modal-year"
+                 id="modalYear">
+
+                1940
+
+            </div>
+
+
+            <h2 id="modalTitle">
+                ENIAC
+            </h2>
+
+
+            <p id="modalDescription">
+
+                Considerado um dos primeiros computadores
+                eletrônicos de uso geral.
+
+            </p>
+
+
+            <div class="modal-stats">
+
+                <div>
+
+                    <span>
+                        DADO 01
+                    </span>
+
+                    <strong id="modalStatOne">
+                        17.468
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        DADO 02
+                    </span>
+
+                    <strong id="modalStatTwo">
+                        30 t
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        DADO 03
+                    </span>
+
+                    <strong id="modalStatThree">
+                        150 kW
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         LIGHTBOX
+    ========================================== -->
+
+    <div class="image-lightbox"
+         id="imageLightbox">
+
+        <button class="lightbox-close"
+                id="lightboxClose"
+                aria-label="Fechar imagem">
+
+            ×
+
+        </button>
+
+        <img src=""
+             alt=""
+             id="lightboxImage">
+
+        <div class="lightbox-caption"
+             id="lightboxCaption">
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+
+                DIGITAL MUSEUM
+
+            </div>
+
+            <span>
+                Uma experiência sobre tecnologia.
+            </span>
+
+            <span>
+                © 2026
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
